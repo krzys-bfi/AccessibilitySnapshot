@@ -15,7 +15,7 @@ let package = Package(
             name: "AccessibilitySnapshot",
             targets: ["AccessibilitySnapshot"]
         ),
-        
+
         .library(
             name: "AccessibilitySnapshotCore",
             targets: ["AccessibilitySnapshotCore"]
@@ -24,8 +24,8 @@ let package = Package(
     dependencies: [
         .package(
             name: "SnapshotTesting",
-            url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
-            .upToNextMajor(from: "1.8.0")
+            url: "https://github.com/pimms/swift-snapshot-testing.git",
+            .revision("0efeef44df913fe60ea868f037f271ac927a8e8c")
         )
     ],
     targets: [
